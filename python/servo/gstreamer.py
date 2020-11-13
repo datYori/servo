@@ -80,7 +80,9 @@ WINDOWS_PLUGINS = [
 ]
 
 MACOS_PLUGINS = [
-    ("gstapplemedia", "gst-plugins-bad"),
+    # Temporarily disabled until CI is using Mojave.
+    # https://github.com/servo/saltfs/issues/1011
+    #("gstapplemedia", "gst-plugins-bad"),
     ("gstosxaudio", "gst-plugins-good"),
     ("gstosxvideo", "gst-plugins-good"),
 ]
